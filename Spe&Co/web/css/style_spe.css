@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
 }
@@ -17,15 +18,11 @@ nav {
     align-items: center;
     justify-content: space-around;
     background-color: rgb(255, 255, 255);
-    height: 80px;
+    height: 100px;
 }
 
 nav .logo img{
     width: 60px;
-}
-
-#graph{
-    width: 30%;
 }
 
 .navbar-content {
@@ -55,12 +52,12 @@ nav .logo img{
 }
 
 .inscrption {
-    padding: 10px 20px;
+    padding: 15px 30px;
     border: 2px solid transparent;
-    background: rgb(255, 149, 149);
+    background-color: rgb(255, 149, 149);
     border-radius: 10px;
-    transition: background .5s;
-    color: auto;
+    transition: background-color .5s, color .5s;
+    color: black;
     cursor:pointer;
 
 }
@@ -82,15 +79,16 @@ nav .logo img{
 }
 
 .links {
-    width: 390px;
+    min-width: 350px;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background: rgb(255, 112, 112);
     height: 100%;
 }
 .links li {
+    background-color: rgb(192, 192, 192);
     text-align: center;
     width: 100%;
     list-style: none;
@@ -100,16 +98,25 @@ nav .logo img{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    transition: background-color .3s;
 }
 .links li:last-child{
     border-bottom: none;
+}
+.links li:hover {
+    background: rgb(150, 150, 150);
 }
 .links li a{
     text-decoration: none;
     color: black;
     font-weight: 500;
     cursor:pointer;
-    
+    transition: color .3s;
+    padding: 20px 0;
+    width: 100%;
+}
+.links li:hover > a{
+    color: rgb(255, 255, 255);
 }
 
 
@@ -118,24 +125,75 @@ nav .logo img{
     width: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px 20px;
+    align-items: baseline;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    padding: 10px 100px;
+    background: #92CEE6;
 }
 .introduction h1 {
     font-size: 36px;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
 }
 
 .introduction-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 30px;
     width: 100%;
 }
 
 .introduction-content img {
-    width: 40%;
+    width: 30%;
+}
+
+.introduction-content p {
+    width: 50%;
+}
+
+/* SPECIALITES */
+.specialites {
+    height: auto;
+    width: 100%;
+    padding: 30px 150px;
+    background: rgb(255, 255, 255);
+}
+
+.specialites .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.title img {
+    width: 40px;
+    max-height: 40px;
+    margin-right: 30px;
+}
+
+
+.specialites h1 {
+    color: #364646;
+}
+
+.specialites-impaire {
+    /*background: #68b0ab;*/
+}
+
+.specialites-paire {
+    /*background: #5a7ee0;*/
+}
+
+.subcontent {
+    margin: 40px 100px;
+}
+.subcontent h2 {
+    margin-bottom: 20px;
+    color: #629493;
 }
