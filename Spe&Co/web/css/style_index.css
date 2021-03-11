@@ -8,7 +8,7 @@ Yo, la mif
     padding: 0;
 }
 
-body {
+body{
     font-family: Roboto, sans-serif;
     background: rgb(201, 201, 201);
 }
@@ -73,24 +73,48 @@ nav .logo img{
 	width: 100%;
 }
 
-/** Section 1 **/
-
-#section1{
+/** Section Content **/
+section{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	background-color: #92CEE6;
 }
 
-#text1{
-	padding-top :3%;
-	padding-bottom :3%;
-	width: 40%;
+.section-content{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+    flex-direction: row;
+
 }
 
-#graph{
-	width: 40%;
+.text-content{
+    width: 35%;
 }
 
+.title{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
 
+.type-1{
+	background-color: #508de8;
+}
+
+.type-2{
+	background-color: #f4efe8;
+}
+
+.bottom-page{
+    background-color: silver;
+}
+
+#copy{
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+    color:rgb(255, 255, 255);
+}
