@@ -3,83 +3,150 @@ Project Spe&Co
 -->
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<link rel="icon" type="image/png" href="../content/favicon/chrome_icon.png">
-    	<title>Accueil</title>
-    	<link rel="stylesheet" href="../css/style_index.css">
-	</head>
-	<body>	
 
-		<!-- NAVBAR -->
-    	<nav>
-        	<div class="logo">
-            	<img src="../content/img/logo.png" alt="logo">
-        	</div>
-        	<div class="navbar-content">
-            	<li><a href="index.html">Accueil</a></li>
-            	<li><a href="specialites.html">Specialités</a></li>
-            	<li><a href="#">Qui sommes-nous</a></li>
-            	<li><a href="https://www.ndp-enghien.org/">Contact</a></li>
-            	<button class="inscrption">S'INCRIRE</button>
-        	</div>
-    	</nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../content/favicon/chrome_icon.png">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="../css/style_index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
 
-    	<!-- Banner at the top of the page -->
-    	<img id="banner" src="../content/img/main_banner2.jpg" alt="bannière">
+<body>
 
-    	<!-- section 1 -->
-    	<section class="type-1">
-    		<div class="section-content">
-				<div class="text-content">
-					<h2 class="title">L’ENSEIGNEMENT GENERAL EN PREMIERE<br>LES CHOIX D’ENSEIGNEMENTS DE SPÉCIALITÉ EN PREMIÈRE</h2>
-    				<p>En Première, vous disposez d’un choix de 3 spécialités sur 12  et vous avez la possibilité de choisir une option complémentaire. Vous devrez ensuite abandonner une de ces trois spécialités en Terminale. Attention, toutes les spécialités ne sont pas proposées dans tous les lycées.</p>
-				</div>
-    			<img src="../content/img/circular_graph.png" alt="graphique circulaire">
-    		</div>
-    	<section>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <img src="../content/img/logo.png" alt="logo">
+        </div>
+        <button class="hamburger" id='hamburger'>
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="navbar-content">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="specialites.html">Specialités</a></li>
+            <li><a href="">Qui sommes-nous</a></li>
+            <li><a href="https://www.ndp-enghien.org/">Contact</a></li>
+            <button class="inscrption">S'INCRIRE</button>
+        </div>
+    </nav>
 
-		<!-- section 2 -->
-		<section class="type-2">
-    		<div class="section-content">
-				<img src="../content/img/circular_graph.png" alt="graphique circulaire">
-				<div class="text-content">
-					<h2 class="title">L’ENSEIGNEMENT GENERAL EN PREMIERE<br>LES CHOIX D’ENSEIGNEMENTS DE SPÉCIALITÉ EN PREMIÈRE</h2>
-    				<p>En Première, vous disposez d’un choix de 3 spécialités sur 12  et vous avez la possibilité de choisir une option complémentaire. Vous devrez ensuite abandonner une de ces trois spécialités en Terminale. Attention, toutes les spécialités ne sont pas proposées dans tous les lycées.</p>
-				</div>
-    		</div>
-    	<section>
+    <!-- Banner at the top of the page -->
+    <div class="banner">
+        <div class="bg-banner">
+            <h1 class="banner-title reveal">Bienvenue sur <span class="name-society">SPE&CO</span></h1>
+            <h3 class="banner-subtitle reveal">Pour vous renseigner sur les différentes spécialités proposées en 1ère à Notre
+                Dame Providence</h3>
+            <a href="#start"><button class="btn btn-discover reveal"><span>Découvrir</button></a>
+        </div>
+        <img src="../content/img/work.svg" alt="">
+    </div>
 
-		<!-- section 3 -->
-		<section class="type-1">
-    		<div class="section-content">
-				<div class="text-content">
-					<h2 class="title">L’ENSEIGNEMENT GENERAL EN PREMIERE<br>LES CHOIX D’ENSEIGNEMENTS DE SPÉCIALITÉ EN PREMIÈRE</h2>
-    				<p>En Première, vous disposez d’un choix de 3 spécialités sur 12  et vous avez la possibilité de choisir une option complémentaire. Vous devrez ensuite abandonner une de ces trois spécialités en Terminale. Attention, toutes les spécialités ne sont pas proposées dans tous les lycées.</p>
-				</div>
-				<img src="../content/img/circular_graph.png" alt="graphique circulaire">
-    		</div>
-    	<section>
+    <section id="start">
+        <div class="part first-part">
+            <h3 class="subtitle reveal">VOS CHOIX</h3>
+            <h2 class="title reveal">INFORMATIONS A SAVOIR SUR LES SPECIALITES</h2>
+            <p class="reveal">En Première, vous disposez d’un choix de 3 spécialités sur les 9 proposées par Notre Dame Providence.
+                Vous devrez ensuite abandonner une de ces trois spécialités en Terminale.</p>
+            <div class="content reveal">
+                <div class="first subcontent">
+                    <img src="../content/img/medal.svg" alt="">
+                    <p class="description"><span class="numero">9</span> spécialités proposées</p>
+                </div>
+                <div class="second subcontent">
+                    <img src="../content/img/teaching.svg" alt="">
+                    <p class="description"><span class="numero">4</span> heures chacune par semaine</p>
+                </div>
+                <div class="third subcontent">
+                    <img src="../content/img/specialites.svg" alt="">
+                    <p class="description"><span class="numero">3</span> spécialités à choisir</p>
+                </div>
+            </div>
+        </div>
 
-		<!-- section 4 -->
-		<section class="type-2">
-    		<div class="section-content">
-				<img src="../content/img/circular_graph.png" alt="graphique circulaire">
-				<div class="text-content">
-					<h2 class="title">L’ENSEIGNEMENT GENERAL EN PREMIERE<br>LES CHOIX D’ENSEIGNEMENTS DE SPÉCIALITÉ EN PREMIÈRE</h2>
-    				<p>En Première, vous disposez d’un choix de 3 spécialités sur 12  et vous avez la possibilité de choisir une option complémentaire. Vous devrez ensuite abandonner une de ces trois spécialités en Terminale. Attention, toutes les spécialités ne sont pas proposées dans tous les lycées.</p>
-				</div>
-    		</div>
+        <div class="part second-part">
+            <div class="part-content reveal">
+                <h2>FAIRE LE QUESTIONNAIRE</h2>
+                <p>Pas beaucoup d'idées pour vous décidez sur le choix de vos spécialités...</p>
+                <a href="#"><button class="btn btn-quiz">COMMENCER LE TEST</button></a>
+            </div>
+            <div class="bg">
+                <img src="../content/img/quiz.svg" class="reveal" alt="">
+            </div>
+        </div>
 
-		<!-- Footer -->
-		<section class="bottom-page">
+        <div class="part thrid-part reveal">
+            <h3 class="subtitle">LES SPECIALITES</h3>
+            <h2 class="title">LES ENSEIGNEMENTS DE SPÉCIALITÉ EN PREMIÈRE</h2>
+            <div class="cards">
+                <div class="card first">
+                    <div class="bg">
+                        <img src="../content/img/laptop.svg" alt="">
+                    </div>
+                    <h2>NSI</h2>
+                </div>
 
-		</section>
-		<section id="copy" class="bottom-page">
-			<p> Spe&Co Copyright | All Rights Reserved</p>
-		</section>
-	</body>
-	
+                <div class="card second">
+                    <div class="bg">
+                        <img src="../content/img/calculator.svg" alt="">
+                    </div>
+                    <h2>Mathématiques</h2>
+                </div>
+
+                <div class="card third">
+                    <div class="bg">
+                        <img src="../content/img/flask.svg" alt="">
+                    </div>
+                    <h2>Physique Chimie</h2>
+                </div>
+            </div>
+            <div class="lien reveal">
+                <a href="#">VOIR PLUS →</a>
+            </div>
+        </div>
+
+
+        <!-- FORTH PART -->
+        <div class="part forth-part">
+            <div class="graph reveal">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="text reveal">
+                <h1>STATISTIQUES DES CHOIX DE SPECIALITE</h1>
+                <h3>Basées sur l'année scolaire 2021</h3>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="bg">
+            <div class="text reveal">
+                <h1>Notre dame providence</h1>
+                <p><span>Adresse :</span> 9 Boulevard Sadi Carnot, 95880 Enghien-les-Bains</p>
+                <p><span>Téléphone :</span> 01 34 12 63 78</p>
+                <p><span>Email :</span> contact@clnp.org</p>
+                <div class="reseaux">
+                    <a href="https://www.facebook.com/pages/Lyc%C3%A9e%20Notre%20-%20Dame%20Providence/106035326102995/"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://www.youtube.com/channel/UChth4rXnNwnY_M7-Ya30fWw"><i class="fab fa-youtube fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="map reveal">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1263.0231912243469!2d2.312495978776781!3d48.9673127483226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e668ed8c018907%3A0x3b868fd3f0c78964!2s9%20Boulevard%20Sadi%20Carnot%2C%2095880%20Enghien-les-Bains!5e0!3m2!1sfr!2sfr!4v1615642111666!5m2!1sfr!2sfr" width="90%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2021 SPE&CO. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/index.js"></script>
+</body>
+
 </html>
