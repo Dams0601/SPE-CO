@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spécialités</title>
     <link rel="stylesheet" href="../css/style_spe.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
 </head>
 
 <body>
@@ -16,6 +20,9 @@
         <div class="logo">
             <img src="../content/img/logo.png" alt="logo">
         </div>
+        <button class="hamburger" id='hamburger'>
+            <i class="fas fa-bars"></i>
+        </button>
         <div class="navbar-content">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="specialites.html">Specialités</a></li>
@@ -40,199 +47,131 @@
         </aside>
         <!-- INTRODUCTION -->
         <section class="introduction">
+            <div class="bande-header-top"></div>
+            <div class="bande-header-bottom"></div>
             <h1>Les spécialités</h1>
             <div class="introduction-content">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates unde impedit adipisci! Ducimus
-                    sit quia ipsam qui repellat ad odit rerum beatae? Nostrum aliquid, deserunt quidem reiciendis libero
-                    eos veniam!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates unde impedit adipisci!Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Voluptates unde impedit adipisci!Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Voluptates unde impedit adipisci!Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Voluptates unde impedit adipisci!
-                </p>
+                <div class="text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates unde impedit adipisci!
+                        Ducimus
+                        sit quia ipsam qui repellat ad odit rerum beatae? Nostrum aliquid, deserunt quidem reiciendis
+                        libero
+                        eos veniam!
+                    </p>
+                    <button class="btn btn-quiz"><a href="">PETIT QUIZ</a></button>
+                </div>
                 <img id="graph" src="../content/img/specialites.jpg" alt="tableau de spécialités">
             </div>
         </section>
     </div>
     <!-- NUMERIQUE ET SCIENCES INFORMATIQUES -->
-    <section class="specialites specialites-impaire" id="NSI">
-        <div class="title">
-            <img src="../content/img/laptop.svg" alt="">
-            <h1>NSI</h1>
+    <section class="specialites" id="NSI">
+        <div class="background-title">
+            <div class="bande bande-top-left"></div>
+            <div class="bande bande-top-right"></div>
+            <div class="bande bande-bottom-left"></div>
+            <div class="bande bande-bottom-right"></div>
+            <div class="title reveal">
+                <img src="../content/img/laptop.svg" alt="">
+                <h1>NUMERIQUE ET SCIENCES DE L’INFORMATIQUE</h1>
+            </div>
         </div>
-        <div class="subcontent">
-            <h2>Objectifs du programme de la spécialité numérique et sciences informatiques en première</h2>
-            <p>Le programme officiel de la spécialité numérique et sciences informatiques en Première décrit les
-                objectifs de cette matière de la manière suivante :</p>
-            <p>L’objectif de cet enseignement, non professionnalisant, est l’appropriation des concepts et des méthodes
-                qui fondent l’informatique, dans ses dimensions scientifiques et techniques. Cet enseignement s’appuie
-                sur l’universalité de quatre concepts fondamentaux et la variété de leurs interactions.</p>
-            <li>Les données, qui représentent sous une forme numérique unifiée des informations très diverses : textes,
-                images, sons, mesures physiques, sommes d’argent, etc.</li>
-            <li>Les algorithmes, qui spécifient de façon abstraite et précise des traitements à effectuer sur les
-                données à partir d’opérations élémentaires.</li>
-            <li>Les langages, qui permettent de traduire les algorithmes abstraits en programmes textuels ou graphiques
-                de façon à ce qu’ils soient exécutables par les machines.</li>
-            <li>Les machines, et leurs systèmes d’exploitation, qui permettent d’exécuter des programmes en enchaînant
-                un grand nombre d’instructions simples, assurent la persistance des données par leur stockage et de
-                gérer les communications. On y inclut les objets connectés et les réseaux.</li>
-        </div>
-        <div class="subcontent">
-            <h2>Compétences associées au programme de spécialité numérique et sciences informatiques première</h2>
-            <p>L’enseignement de la spécialité numérique et sciences informatiques permet de développer les compétences suivantes :</p>
-            <li>Analyser et modéliser un problème en termes de flux et de traitement d’informations.</li>
-            <li>Décomposer un problème en sous-problèmes, reconnaître des situations déjà analysées et réutiliser des solutions.</li>
-            <li>Concevoir des solutions algorithmiques.</li>
-            <li>Traduire un algorithme dans un langage de programmation, en spécifier les interfaces et les interactions, comprendre et réutiliser des codes sources existants, développer des processus de mise au point et de validation de programmes.</li>
-            <li>Mobiliser les concepts et les technologies utiles pour assurer les fonctions d’acquisition, de mémorisation, de traitement et de diffusion des informations.</li>
-            <li>Développer des capacités d’abstraction et de généralisation.</li>
-        </div>
-        <div class="subcontent">
-            <h2>Organisation du programme de spécialité numérique et sciences informatiques de première</h2>
-            <p>L’enseignement de spécialité numérique et sciences informatiques en Première se décompose en 8 rubriques,
-                qui ne représentent pas forcément un plan de cours. C’est au professeur de déterminer la meilleure
-                manière d’aborder toutes les problématiques du cours.</p>
-            <li>Rubrique 1 : Histoire de l’informatique</li>
-            <li>Rubrique 2 : Représentation des données : types et valeurs de base</li>
-            <li>Rubrique 3 : Représentation des données : types construits</li>
-            <li>Rubrique 4 : Traitement de données en tables</li>
-            <li>Rubrique 5 : Interactions entre l’homme et la machine sur le Web</li>
-            <li>Rubrique 6 : Architectures matérielles et systèmes d’exploitation</li>
-            <li>Rubrique 7 : Langages et programmation</li>
-            <li>Rubrique 8 : Algorithmique</li>
         </div>
 
-    </section>
-    <section class="specialites specialites-paire" id="SI">
-        <div class="title">
-            <img src="../content/img/gears.svg" alt="">
-            <h1>Sciences de l'ingénieur</h1>
+        <div class="content">
+            <div class="subcontent">
+                <div class="box box-blue">
+                    <h2 class="box-title"><img class="logo-title" src="../content/img/target.svg">OBJECTIFS</h2>
+                    <div class="box-content">
+                            <li>Les données, qui représentent sous une forme numérique unifiée des informations très diverses : textes, images, sons, mesures physiques, sommes d’argent, etc.</li>
+                            <li>Les algorithmes, qui spécifient de façon abstraite et précise des traitements à effectuer sur les données à partir d’opérations élémentaires.</li>
+                            <li>Les langages, qui permettent de traduire les algorithmes abstraits en programmes textuels ou graphiques de façon à ce qu’ils soient exécutables par les machines.</li>
+                            <li>Les machines, et leurs systèmes d’exploitation, qui permettent d’exécuter des programmes en enchaînant un grand nombre d’instructions simples, assurent la persistance des données par leur stockage et de gérer les communications. On y inclut les objets connectés et les réseaux.</li>
+                    </div>
+                </div>
+                <div class="box box-white">
+                    <h2 class="box-title"><img class="logo-title" src="../content/img/skills.svg">COMPETENCES</h2>
+                    <div class="box-content">
+                        <li>Analyser et modéliser un problème en termes de flux et de traitement d’informations.</li>
+                        <li>Décomposer un problème en sous-problèmes, reconnaître des situations déjà analysées et réutiliser des solutions.</li>
+                        <li>Concevoir des solutions algorithmiques.</li>
+                        <li>Traduire un algorithme dans un langage de programmation, en spécifier les interfaces et les interactions, comprendre et réutiliser des codes sources existants.</li>
+                        <li>Mobiliser les concepts et les technologies utiles pour assurer les fonctions d’acquisition, de mémorisation, de traitement et de diffusion des informations.</li>
+                        <li>Développer des capacités d’abstraction et de généralisation.</li>
+                    </div>
+                </div>
+            </div>
+            <div class="subcontent">
+                <div class="box box-white">
+                    <h2 class="box-title"><img class="logo-title" src="../content/img/program.svg">PROGRAMME</h2>
+                    <div class="box-content">
+                        <li>Algorithmique</li>
+                        <li>Architectures matérielles et systèmes d’exploitation</li>
+                        <li>Histoire de l’informatique</li>
+                        <li>Interactions entre l’homme et la machine sur le Web</li>
+                        <li>Langages et programmation</li>
+                        <li>Représentation des données : types construits</li>
+                        <li>Représentation des données : types et valeurs de base</li>
+                        <li>Traitement de données en tables</li>
+                        <a target="_blank"
+                            href="https://euler.ac-versailles.fr/IMG/pdf/nsi_term_spe_progr_2019_07.pdf"><button
+                                class="btn btn-more">EN SAVOIR
+                                PLUS</button></a>
+                    </div>
+                </div>
+                <div class="box box-blue">
+                    <h2 class="box-title"><img class="logo-title" src="../content/img/school.svg">DEBOUCHES</h2>
+                    <div class="box-content">
+                        <li>Prépa Physique</li>
+                        <li>Ecole d'ingénieur</li>
+                        <li>Licence Informatique</li>
+                        <li>BTS Systèmes Numériques</li>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="comments">
+            <h2>Ce que disent les élèves</h2>
+            <div class="comments-border reveal">
+                <div class="box-comments0">
+                    <p class="quote">“ Les cours de NSI sont la plupart pragmatiques. Spécialité très interessante. ”</p>
+                    <div class="profil">
+                        <img src="../content/img/user.svg" alt="">
+                        <div class="info-profil">
+                            <h3 class="name">Damien</h3>
+                            <p class="job">Première</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="subcontent">
-            <h2>Objectifs de la spécialité sciences de l'ingénieur en première</h2>
-            <p>Le programme officiel de la spécialité sciences de l’ingénieur en première précise :</p>
-            <li>Avec la contribution des autres enseignements scientifiques, l’objectif de l’enseignement de spécialité
-                de sciences de l’ingénieur du cycle terminal du lycée est de faire acquérir des compétences
-                fondamentales qui permettent aux élèves de poursuivre vers les qualifications d’ingénieur dont notre
-                pays a besoin.</li>
-        </div>
+                <div class="box-comments0">
+                    <p class="quote">“ Far far away, behind the word mountains, far from the countries. ”</p>
+                    <div class="profil">
+                        <img src="../content/img/user.svg" alt="">
+                        <div class="info-profil">
+                            <h3 class="name">Alexandre</h3>
+                            <p class="job">Première</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="subcontent">
-            <h2>Compétences associées au programme de spécialité sciences de l'ingénieur en première</h2>
-            <p>Le programme de la spécialité sciences de l’ingénieur est construit pour l’ensemble du cycle terminal,
-                c’est à dire qu’il est pensé pour un enseignement sur deux ans, en première et en terminale. Les
-                compétences décrites dans le programme officiel sont donc celles qui doivent être acquises à l’issue de
-                ces deux années d’enseignement. Elles sont catégorisées en 5 parties :</p>
-            <li>Créer des produits innovants</li>
-            <li>Analyser les produits existants pour appréhender leur complexité</li>
-            <li>Modéliser les produits pour prévoir leurs performances</li>
-            <li>Valider les performances d’un produit par les expérimentations et les simulations numériques </li>
-            <li>S’informer, choisir, produire de l’information pour communiquer au sein d’une équipe ou avec des
-                intervenants extérieurs </li>
-        </div>
+                <div class="box-comments0">
+                    <p class="quote">“ Far far away, behind the word mountains, far from the countries. ”</p>
+                    <div class="profil">
+                        <img src="../content/img/user.svg" alt="">
+                        <div class="info-profil">
+                            <h3 class="name">Sabine</h3>
+                            <p class="job">Première</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="subcontent">
-            <h2>Organisation du programme de sciences de l'ingénieur de première</h2>
-            <p>Le programme de la spécialité sciences de l’ingénieur aborde plusieurs thématiques, empruntées au monde
-                contemporain. Bien qu’elles ne soient pas exhaustives, ces thématiques permettent de structurer le cours
-                et les activités autour de problématiques actuelles :</p>
-            <li>Les territoires et les produits intelligents, la mobilité des personnes et des biens </li>
-            <li>L’homme assisté, réparé, augmenté </li>
-            <li>Le design responsable et le prototypage de produits innovants </li>
-            <p>En première, ce programme est complété par un projet de 12 heures, que les élèves doivent réaliser en
-                équipe pour imaginer et matérialiser tout ou partie d’une solution originale. Selon l’établissement, ce
-                projet peut faire l’objet d’un défi entre les équipes d’une classe ou d’une promotion.
-                L’enseignement de la spécialité sciences de l’ingénieur en première représente le premier volet d’un
-                programme construit sur deux ans, qui permet aux élèves qui choisissent cette discipline de développer
-                leur maîtrise de la démarche scientifique, à travers l’observation, l’élaboration d’hypothèses, la
-                modélisation, la simulation, l’expérimentation matérielle ou virtuelle et l’analyse des résultats
-                obtenus. Peu à peu, ils se familiarisent avec le métier d’ingénieur et ses spécificités, et acquièrent
-                toutes les clés utiles à une poursuite d’études dans cette voie.
-
-            </p>
-        </div>
-    </section>
-    <section class="specialites specialites-impaire" id="Mathematiques">
-        <div class="title">
-            <img src="../content/img/calculator.svg" alt="">
-            <h1>Mathématiques</h1>
-        </div>
-        <div class="subcontent">
-            <h2>À qui s’adresse la spécialité mathématiques au lycée ?</h2>
-            <p>Si vous voulez vous inscrire après le Bac dans une filière avec un contenu mathématique important, il
-                conviendra bien sûr de choisir cette spécialité. Par exemple, pour devenir ingénieur, suivre une
-                formation en physique ou encore aller en fac de médecine. Ces programmes, plus relevés que les
-                précédents, sont faits pour ceux qui veulent approfondir le sujet. L’esprit de la réforme, c’est donc
-                plus de maths pour ceux qui en ont besoin.</p>
-        </div>
-        <div class="subcontent">
-            <h2>La discipline sera-t-elle facultative pour ceux qui ne choisiront pas la spécialité ?</h2>
-            <p>Ceux qui ne choisiront pas la spécialité auront tout de même des mathématiques. Mais ce sera sous une
-                autre forme, dans le cadre de l’enseignement scientifique, qui, lui, fait partie du tronc commun. Il
-                s’agira davantage de culture mathématique. Dans une approche pluridisciplinaire, les élèves aborderont
-                l’apport de la discipline dans les sujets du quotidien. C’est une façon aussi de rendre les maths plus
-                vivantes, plus attractives.</p>
-        </div>
-        <div class="subcontent">
-            <h2>Objectifs de la spécialité mathématiques en première</h2>
-            <p>Le programme proposé en classe de Première dans le cadre de la spécialité en mathématiques est préparé
-                avec la volonté de permettre à chaque lycéen de :</p>
-            <li>développer le goût des mathématiques,</li>
-            <li>d’en apprécier les démarches et les objectifs afin qu’il puisse faire l’expérience personnelle de
-                l’efficacité des concepts mathématiques et de la simplification et la généralisation que permet la
-                maîtrise de l’abstraction.</li>
-        </div>
-        <div class="subcontent">
-            <h2>Organisation du programme de spécialité mathématiques</h2>
-            <p>Le programme tourne autour de 5 axes majeurs :</p>
-            <li>Algèbre</li>
-            <li>Analyse</li>
-            <li>Géométrie</li>
-            <li>Probabilités et statistiques</li>
-            <li>Algorithmique et programmation</li>
-        </div>
-
-    </section>
-    <section class="specialites specialites-paire" id="PC">
-        <div class="title"><img src="../content/img/flask.svg" alt="">
-            <h1>Physique chimie</h1>
-        </div>
-
-    </section>
-    <section class="specialites specialites-impaire" id="SVT">
-        <div class="title">
-            <img src="../content/img/microscope.svg" alt="">
-            <h1>Sciences et vie de la terre</h1>
         </div>
     </section>
-    <section class="specialites specialites-impaire" id="SES">
-        <div class="title">
-            <img src="../content/img/euro.svg" alt="">
-            <h1>Sciences économiques et sociales</h1>
-        </div>
 
-    </section>
-    <section class="specialites specialites-impaire" id="HGSSP">
-        <div class="title"><img src="../content/img/globe.svg" alt="">
-            <h1>Histoire-géographie, géopolitique et sciences politiques</h1>
-        </div>
-
-    </section>
-    <section class="specialites specialites-impaire" id="HLP">
-        <div class="title"><img src="../content/img/book.svg" alt="">
-            <h1>Humanité, littérature et philosophie</h1>
-        </div>
-
-    </section>
-    <section class="specialites specialites-impaire" id="LLCE">
-        <div class="title"><img src="../content/img/chat.svg" alt="">
-            <h1>Langues, littératures et cultures étrangères</h1>
-        </div>
-
-    </section>
-
+    <script src="../js/specialites.js"></script>
 </body>
 
 </html>
