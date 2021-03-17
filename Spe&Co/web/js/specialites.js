@@ -1,4 +1,12 @@
-/* CAROUSEL - COMMENTARY */
+/* HANBURGER */
+const hamburger = document.querySelector('#hamburger');
+const navContent = document.querySelector('.navbar-content');
+
+hamburger.addEventListener('click', function (e) {
+    navContent.classList.toggle('show');
+})
+
+/* CAROUSEL - COMMENTARY 
 $(".comments-border > div:gt(0)").hide();
 
 setInterval(function() {
@@ -9,7 +17,7 @@ setInterval(function() {
     .end()
     .appendTo('.comments-border');
 }, 4000);
-
+*/
 
 /* APPARITION DES TITLES AU DEFILEMENT */
 const ratio = .1
@@ -32,3 +40,10 @@ const observer = new IntersectionObserver(handleIntersect, options);
 document.querySelectorAll('.reveal').forEach(function (r) {
     observer.observe(r)
 })
+
+/* BUTTON REVENIR EN HAUT */
+document.addEventListener('DOMContentLoaded', function() {
+    window.onscroll = function(ev) {
+      document.getElementById("goTop").className = (window.pageYOffset > 100) ? "show" : "unshow";
+    };
+  });
