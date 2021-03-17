@@ -16,7 +16,7 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav>
+    <nav id="nav">
         <div class="logo">
             <img src="../content/img/logo.png" alt="logo">
         </div>
@@ -46,18 +46,15 @@
             <li><a href="#LLCE">LLCE</a></li>
         </aside>
         <!-- INTRODUCTION -->
-        <section class="introduction">
+        <section id="introduction" class="introduction">
             <div class="bande-header-top"></div>
             <div class="bande-header-bottom"></div>
-            <h1>Les spécialités</h1>
+            
             <div class="introduction-content">
                 <div class="text">
+                    <h1>Les spécialités</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates unde impedit adipisci!
-                        Ducimus
-                        sit quia ipsam qui repellat ad odit rerum beatae? Nostrum aliquid, deserunt quidem reiciendis
-                        libero
-                        eos veniam!
+                        Vous devez choisir 3 enseignements de spécialité si vous vous orientez vers une 1<sup>ère</sup> générale. Un choix important car il conditionnera votre orientation dans l’enseignement supérieur. Quelles spécialité choisir ? Quels sont les débouchés par spécialité ? Quelles spécialités pour quelles études ? 
                     </p>
                     <button class="btn btn-quiz"><a href="">PETIT QUIZ</a></button>
                 </div>
@@ -65,6 +62,8 @@
             </div>
         </section>
     </div>
+    <!-- BUTTON REVENIR EN HAUT -->
+    <a href="#nav" class="unshow" id="goTop"></a>
     <!-- NUMERIQUE ET SCIENCES INFORMATIQUES -->
     <section class="specialites" id="NSI">
         <div class="background-title">
@@ -170,6 +169,114 @@
 
         </div>
     </section>
+    
+<!-- SCIENCES DE L'INGENIEUR -->
+<section class="specialites" id="SI">
+    <div class="background-title">
+        <div class="bande bande-top-left"></div>
+        <div class="bande bande-top-right"></div>
+        <div class="bande bande-bottom-left"></div>
+        <div class="bande bande-bottom-right"></div>
+        <div class="title reveal">
+            <img src="../content/img/gears.svg" alt="">
+            <h1>SCIENCES DE L'INGENIEUR</h1>
+        </div>
+    </div>
+    </div>
+
+    <div class="content">
+        <div class="subcontent">
+            <div class="box box-blue">
+                <h2 class="box-title"><img class="logo-title" src="../content/img/target.svg">OBJECTIFS</h2>
+                <div class="box-content">
+                        <li>Les données, qui représentent sous une forme numérique unifiée des informations très diverses : textes, images, sons, mesures physiques, sommes d’argent, etc.</li>
+                        <li>Les algorithmes, qui spécifient de façon abstraite et précise des traitements à effectuer sur les données à partir d’opérations élémentaires.</li>
+                        <li>Les langages, qui permettent de traduire les algorithmes abstraits en programmes textuels ou graphiques de façon à ce qu’ils soient exécutables par les machines.</li>
+                        <li>Les machines, et leurs systèmes d’exploitation, qui permettent d’exécuter des programmes en enchaînant un grand nombre d’instructions simples, assurent la persistance des données par leur stockage et de gérer les communications. On y inclut les objets connectés et les réseaux.</li>
+                </div>
+            </div>
+            <div class="box box-white">
+                <h2 class="box-title"><img class="logo-title" src="../content/img/skills.svg">COMPETENCES</h2>
+                <div class="box-content">
+                    <li>Analyser et modéliser un problème en termes de flux et de traitement d’informations.</li>
+                    <li>Décomposer un problème en sous-problèmes, reconnaître des situations déjà analysées et réutiliser des solutions.</li>
+                    <li>Concevoir des solutions algorithmiques.</li>
+                    <li>Traduire un algorithme dans un langage de programmation, en spécifier les interfaces et les interactions, comprendre et réutiliser des codes sources existants.</li>
+                    <li>Mobiliser les concepts et les technologies utiles pour assurer les fonctions d’acquisition, de mémorisation, de traitement et de diffusion des informations.</li>
+                    <li>Développer des capacités d’abstraction et de généralisation.</li>
+                </div>
+            </div>
+        </div>
+        <div class="subcontent">
+            <div class="box box-white">
+                <h2 class="box-title"><img class="logo-title" src="../content/img/program.svg">PROGRAMME</h2>
+                <div class="box-content">
+                    <li>Algorithmique</li>
+                    <li>Architectures matérielles et systèmes d’exploitation</li>
+                    <li>Histoire de l’informatique</li>
+                    <li>Interactions entre l’homme et la machine sur le Web</li>
+                    <li>Langages et programmation</li>
+                    <li>Représentation des données : types construits</li>
+                    <li>Représentation des données : types et valeurs de base</li>
+                    <li>Traitement de données en tables</li>
+                    <a target="_blank"
+                        href="https://euler.ac-versailles.fr/IMG/pdf/nsi_term_spe_progr_2019_07.pdf"><button
+                            class="btn btn-more">EN SAVOIR
+                            PLUS</button></a>
+                </div>
+            </div>
+            <div class="box box-blue">
+                <h2 class="box-title"><img class="logo-title" src="../content/img/school.svg">DEBOUCHES</h2>
+                <div class="box-content">
+                    <li>Prépa Physique</li>
+                    <li>Ecole d'ingénieur</li>
+                    <li>Licence Informatique</li>
+                    <li>BTS Systèmes Numériques</li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="comments">
+        <h2>Ce que disent les élèves</h2>
+        <div class="comments-border reveal">
+            <div class="box-comments0">
+                <p class="quote">“ Les cours de NSI sont la plupart pragmatiques. Spécialité très interessante. ”</p>
+                <div class="profil">
+                    <img src="../content/img/user.svg" alt="">
+                    <div class="info-profil">
+                        <h3 class="name">Damien</h3>
+                        <p class="job">Première</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-comments0">
+                <p class="quote">“ Far far away, behind the word mountains, far from the countries. ”</p>
+                <div class="profil">
+                    <img src="../content/img/user.svg" alt="">
+                    <div class="info-profil">
+                        <h3 class="name">Alexandre</h3>
+                        <p class="job">Première</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-comments0">
+                <p class="quote">“ Far far away, behind the word mountains, far from the countries. ”</p>
+                <div class="profil">
+                    <img src="../content/img/user.svg" alt="">
+                    <div class="info-profil">
+                        <h3 class="name">Sabine</h3>
+                        <p class="job">Première</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
 
     <script src="../js/specialites.js"></script>
 </body>
