@@ -77,21 +77,22 @@ nav .logo img {
     outline: none;
 }
 
-.inscrption {
+.inscription {
     padding: 10px 20px;
     border: 2px solid transparent;
-    background: rgb(255, 149, 149);
+    background: #508DE8;
     border-radius: 10px;
-    transition: background .5s;
-    color: auto;
+    transition: all .5s;
+    color: white;
+    font-size: large;
     cursor: pointer;
 
 }
 
-.inscrption:hover {
-    border: 2px solid rgb(255, 149, 149);
+.inscription:hover {
+    border: 2px solid #508DE8;
     background: transparent;
-    color: rgb(255, 116, 116);
+    color: #508DE8;
 }
 
 /* BANNER */
