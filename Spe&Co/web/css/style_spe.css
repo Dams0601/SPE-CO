@@ -137,6 +137,7 @@ nav .logo img {
     padding: 20px 0;
     width: 100%;
     transition: 1s;
+    font-weight: 500;
 }
 
 .links li:hover>a {
@@ -278,6 +279,8 @@ a#goTop.show {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: 0px;
 }
 
 .bande-top-left {
@@ -368,12 +371,12 @@ a#goTop.show {
 
 .box {
     width: 50%;
-    min-height: 400px;
+    min-height: 500px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .box-blue {
@@ -393,6 +396,7 @@ a#goTop.show {
 .box-content li {
     list-style-type: "→ ";
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .box-title {
@@ -511,25 +515,116 @@ a {
 }
 
 
+/* FOOTER */
+.footer {
+    min-height: 300px;
+    width: 100%;
+    background: url('../content/img/bg-footer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+}
 
+.footer .bg {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    background: rgba(0, 0, 0, 0.384);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
+.footer .text {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    color: white;
+}
 
-@keyframes slidein {
-    from {
-        opacity: 0;
-        transform: translateY(100px);
-    }
+.footer .text h1 {
+    text-transform: uppercase;
+}
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.footer .text span {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.footer .reseaux {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.reseaux a i {
+    color: white;
+    margin-right: 20px;
+    transition: all .3s;
+}
+
+.fa-facebook:hover {
+    color: #0004ff;
+    filter: drop-shadow(0px 2px 7px #ffffff);
+}
+
+.fa-youtube:hover {
+    color: #d63939;
+    filter: drop-shadow(0px 2px 7px #ffffff);
+}
+
+.map {
+    width: 30%;
+}
+
+/* FOOTER DE FOOTER */
+footer {
+    background: #000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
 
 /* ADAPTATION AUX DIFFERENTES TAILLES D'ECRAN*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+    /* IMAGE DU HAUT DE LA PAGE */
+    .introduction-content img {
+        display: none;
+    }
 
+    /* CONTENT */
+    .content {
+        flex-direction: column; 
+    }
+    .subcontent {
+        min-height: auto;
+        flex-direction: column;
+    }
+
+    .subcontent:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .box{
+        width: 100%;
+        padding: 30px;
+    }
+    .box-title {
+        margin-bottom: 50px;
+    }
+    .box-content li {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     /*HAMBURGER*/
     .navbar-content {
         display: none;
@@ -546,11 +641,77 @@ a {
         margin-bottom: 50px;
     }
 
-    .inscrption {
+    .inscription {
         margin-bottom: 30px;
     }
 
     .hamburger {
         display: block;
+    }
+
+    /* FOOTER */
+    .footer .bg{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .text {
+        margin: 40px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer .text h1 {
+        margin-bottom: 30px;
+    }
+    .footer .text p {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .map {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .map iframe{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    /* COMMENTS */
+    .box-comments0:nth-child(3) {
+        display: none;
+    }
+    .box-comments0 {
+        width: 45%;
+
+    }
+
+    /* HEADER (LINKS + INTRODUCTION) */
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+    .links{
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .links li a:hover {
+        color: white;
+    }
+}
+@media screen and (max-width: 715px) {
+    /* COMMENTS */
+    .box-comments0:nth-child(2) {
+        display: none;
+    }
+    .comments-border {
+        justify-content: center;
+    }
+    .box-comments0 {
+        width: 90%;
+        margin-right: 0;
     }
 }
