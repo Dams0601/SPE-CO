@@ -194,7 +194,7 @@ a#goTop.show {
     justify-content: space-evenly;
     height: 100%;
     width: 100%;
-    padding: 10px 100px;
+    padding: 40px 100px;
     background: linear-gradient(20deg, #4932CB, #A87FFA);
     position: relative;
 }
@@ -272,6 +272,7 @@ a#goTop.show {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
 }
 
 .specialites .title {
@@ -279,8 +280,10 @@ a#goTop.show {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: 0px;
+}
+
+.title h1 {
+    text-align: center;
 }
 
 .bande-top-left {
@@ -404,6 +407,7 @@ a#goTop.show {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .logo-title {
@@ -441,6 +445,10 @@ a {
     font-size: 1.4rem;
 }
 
+a .btn-more {
+    text-align: center;
+}
+
 
 
 /* COMMENTS */
@@ -450,14 +458,14 @@ a {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
     height: auto;
     background: radial-gradient(circle, rgba(11, 89, 255, 1) 0%, rgba(65, 32, 211, 1) 100%);
 }
 
 .comments h2 {
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 5px;
     font-weight: 900;
     color: rgb(255, 255, 255);
@@ -594,15 +602,29 @@ footer {
 
 /* ADAPTATION AUX DIFFERENTES TAILLES D'ECRAN*/
 @media screen and (max-width: 1200px) {
+
     /* IMAGE DU HAUT DE LA PAGE */
     .introduction-content img {
         display: none;
     }
 
+    .introduction-content .text {
+        justify-content: center;
+    }
+
+    .introduction-content .text h1{
+        text-align: center;
+    }
+
+    .introduction-content .text p{
+        margin-right: 0;
+    }
+
     /* CONTENT */
     .content {
-        flex-direction: column; 
+        flex-direction: column;
     }
+
     .subcontent {
         min-height: auto;
         flex-direction: column;
@@ -612,19 +634,18 @@ footer {
         flex-direction: column-reverse;
     }
 
-    .box{
+    .box {
         width: 100%;
         padding: 30px;
     }
-    .box-title {
-        margin-bottom: 50px;
-    }
+
     .box-content li {
         margin-bottom: 30px;
     }
 }
 
 @media screen and (max-width: 1000px) {
+
     /*HAMBURGER*/
     .navbar-content {
         display: none;
@@ -650,22 +671,26 @@ footer {
     }
 
     /* FOOTER */
-    .footer .bg{
+    .footer .bg {
         flex-direction: column;
         align-items: center;
     }
+
     .footer .text {
         margin: 40px 0;
         align-items: center;
         justify-content: center;
     }
+
     .footer .text h1 {
         margin-bottom: 30px;
     }
+
     .footer .text p {
         margin-bottom: 20px;
         text-align: center;
     }
+
     .map {
         width: 100%;
         display: flex;
@@ -673,17 +698,20 @@ footer {
         justify-content: center;
         margin-bottom: 40px;
     }
-    .map iframe{
+
+    .map iframe {
         width: 90%;
     }
 }
 
 
 @media screen and (max-width: 950px) {
+
     /* COMMENTS */
     .box-comments0:nth-child(3) {
         display: none;
     }
+
     .box-comments0 {
         width: 45%;
 
@@ -694,22 +722,36 @@ footer {
         flex-direction: column;
         height: auto;
     }
-    .links{
+
+    .links {
         max-width: 100%;
         min-width: 100%;
     }
+
     .links li a:hover {
         color: white;
     }
+
+    .links li:hover{
+        
+    }
+
+    .links li:hover>a {
+        box-shadow: 0px;
+    }
 }
+
 @media screen and (max-width: 715px) {
+
     /* COMMENTS */
     .box-comments0:nth-child(2) {
         display: none;
     }
+
     .comments-border {
         justify-content: center;
     }
+
     .box-comments0 {
         width: 90%;
         margin-right: 0;
