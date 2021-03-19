@@ -469,7 +469,7 @@ nav .logo img {
 .reseaux a i {
     color: white;
     margin-right: 20px;
-    transition: all .3s;
+    transition: all 1s;
 }
 
 .fa-facebook:hover {

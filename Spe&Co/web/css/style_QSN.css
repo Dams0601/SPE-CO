@@ -1,0 +1,524 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background: rgb(255, 255, 255);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(0.68, -0.09, 0, 0.54);
+}
+
+
+/* NAVBAR */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    min-height: 100px;
+    flex-wrap: wrap;
+}
+
+nav .logo img {
+    width: 60px;
+}
+
+.navbar-content {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-content li {
+    list-style: none;
+}
+
+.navbar-content li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+    cursor: pointer;
+}
+
+.navbar-content li a:hover {
+    color: rgb(121, 121, 121);
+    background-size: 100% 100%;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.inscription {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    background: #508DE8;
+    border-radius: 10px;
+    transition: all .5s;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+
+}
+
+.inscription:hover {
+    border: 2px solid #508DE8;
+    background: transparent;
+    color: #508DE8;
+}
+
+/* BANNER */
+.banner {
+    background: url('../content/img/bg-NDP.jpeg') fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 400px;
+}
+
+.banner .degrade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background: #434343ad;
+}
+
+.banner h1 {
+    color: white;
+}
+
+/* PRESENTATION DE L'ENTREPRISE */
+.introduction {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.introduction h2 {
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0 0 10px;
+}
+
+.introduction .content p {
+    line-height: 1.7;
+    color: #777;
+    margin: 0 0 10px;
+}
+
+.quote {
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0 0 10px;
+}
+
+.author {
+    margin: 0 0 10px;
+}
+
+/* PRESENTATION EQUIPE PEDAGOGIQUE */
+.pedagogie {
+    background: #434343;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 50px 0;
+    min-height: 600px;
+}
+
+.pedagogie h2 {
+    color: white;
+}
+
+.pedagogie #carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.pedagogie .card {
+    width: 20%;
+    background: #FFF;
+    border-radius: 30px;
+    position: absolute;
+    opacity: 0;
+    transition: all 1s;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    box-shadow: 5px 0px 5px silver, -5px 0px 5px silver, 0px 5px 5px silver, 0px -5px 5px silver;
+}
+
+.pedagogie .card img {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.pedagogie .card .info {
+    text-align: center;
+    width: 70%;
+}
+
+.pedagogie .info h3 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.pedagogie .info p {
+    color: #777;
+}
+
+.active {
+    opacity: 1 !important;
+}
+
+
+/* PRESENTATION EQUIPE ADMINISTRATIVE */
+
+.administration {
+    background: #d6d6d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 50px 0;
+    min-height: 600px;
+}
+
+.administration h2 {
+    color: #434343;
+}
+
+.administration #carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.administration .card0 {
+    width: 20%;
+    background: #FFF;
+    border-radius: 30px;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+    box-shadow: 5px 0px 5px rgb(223, 223, 223), -5px 0px 5px rgb(223, 223, 223), 0px 5px 5px rgb(223, 223, 223), 0px -5px 5px rgb(223, 223, 223);
+}
+
+.administration .card0 img {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.administration .card0 .info {
+    text-align: center;
+    width: 70%;
+}
+
+.administration .info h3 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.administration .info p {
+    color: #777;
+}
+
+
+/* PRESENTATION EQUIPE TECHNIQUE */
+.technique {
+    background: #434343;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 50px 0;
+    min-height: 600px;
+}
+
+.technique h2 {
+    color: #FFF;
+}
+
+.technique #carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.technique .card0 {
+    width: 20%;
+    background: #FFF;
+    border-radius: 30px;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+    box-shadow: 5px 0px 5px rgb(223, 223, 223), -5px 0px 5px rgb(223, 223, 223), 0px 5px 5px rgb(223, 223, 223), 0px -5px 5px rgb(223, 223, 223);
+}
+
+.technique .card0 img {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.technique .card0 .info {
+    text-align: center;
+    width: 70%;
+}
+
+.technique .info h3 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.technique .info p {
+    color: #777;
+}
+
+
+.technique .card0:hover,
+.administration .card0:hover {
+    border-radius: 250px;
+    animation: rotate .7s;
+}
+
+/* FOOTER */
+.footer {
+    min-height: 300px;
+    width: 100%;
+    background: url('../content/img/bg-footer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+}
+
+.footer .bg {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    background: rgba(0, 0, 0, 0.384);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .texte {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer .texte h1 {
+    text-transform: uppercase;
+}
+
+.footer .texte span {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.footer .reseaux {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.reseaux a i {
+    color: white;
+    margin-right: 20px;
+    transition: all 1s;
+}
+
+.fa-facebook:hover {
+    color: #0004ff;
+    filter: drop-shadow(0px 2px 7px #ffffff);
+}
+
+.fa-youtube:hover {
+    color: #d63939;
+    filter: drop-shadow(0px 2px 7px #ffffff);
+}
+
+.map {
+    width: 30%;
+}
+
+/* FOOTER DE FOOTER */
+footer {
+    background: #000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+/* ADAPTATION AUX DIFFERENTES TAILLES D'ECRAN*/
+@media screen and (max-width: 1000px) {
+
+    /*HAMBURGER*/
+    .navbar-content {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar-content.show {
+        display: flex;
+        width: 100%;
+    }
+
+    .navbar-content li {
+        margin-bottom: 50px;
+    }
+
+    .inscrption {
+        margin-bottom: 30px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* FOOTER */
+    .footer .bg {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .texte {
+        margin: 40px 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer .texte h1 {
+        margin-bottom: 30px;
+    }
+
+    .footer .texte p {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .map {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .map iframe {
+        width: 90%;
+    }
+
+    /* DISPOSITION DES CARDS */
+    .administration .card0 img, .technique .card0 img, .pedagogie .card img {
+        width: 150px;
+    }
+    .administration .card0 .info, .technique .card0 .info, .pedagogie .card .info {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    /* DISPOSITION DES CARDS */
+    .administration .card0 img, .technique .card0 img, .pedagogie .card img {
+        width: 100px;
+    }
+    .administration .card0 .info, .technique .card0 .info, .pedagogie .card .info {
+        font-size: 12px;
+    }
+    .administration .card0, .technique .card0, .pedagogie .card {
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* DISPOSITION DES CARDS */
+    .administration .card0 img, .technique .card0 img, .pedagogie .card img {
+        width: 50px;
+    }
+    .administration .card0 .info, .technique .card0 .info, .pedagogie .card .info {
+        font-size: 11px;
+    }
+    .administration .card0, .technique .card0, .pedagogie .card {
+        min-height: 200px !important;
+    }
+}
+
+
+/* ANIMATIONS */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
