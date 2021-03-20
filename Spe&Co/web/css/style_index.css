@@ -18,7 +18,7 @@ body {
 .reveal-visible {
     opacity: 1;
     transform: translateY(0);
-    transition: 1s cubic-bezier(0.68,-0.09, 0, 0.54);
+    transition: 1s cubic-bezier(0.68, -0.09, 0, 0.54);
 }
 
 
@@ -138,9 +138,23 @@ nav .logo img {
     margin-bottom: 15px;
 }
 
-.banner img {
+.banner svg {
     width: 40%;
 }
+
+.banner #book4 {
+    animation: move 10s infinite ease-in-out;
+}
+
+.banner #book2 {
+    animation: move2 7s infinite ease-in-out;
+}
+
+
+.banner #bg {
+    animation: clignote 4s infinite ease-in-out;
+}
+
 
 .btn {
     width: auto;
@@ -524,7 +538,7 @@ footer {
     }
 
     /* BANNER */
-    .banner img {
+    .banner svg {
         display: none;
     }
 
@@ -554,12 +568,14 @@ footer {
 
     /* THIRD PART */
     .card.first {
-        width:40%;
+        width: 40%;
     }
+
     .card.second {
         margin-right: 0;
-        width:40%;
+        width: 40%;
     }
+
     .card.third {
         display: none;
     }
@@ -582,14 +598,16 @@ footer {
     }
 
     /* FOOTER */
-    .footer .bg{
+    .footer .bg {
         flex-direction: column;
         align-items: center;
     }
+
     .footer .text {
         margin: 40px 0;
         align-items: center;
     }
+
     .map {
         width: 100%;
         display: flex;
@@ -597,7 +615,8 @@ footer {
         justify-content: center;
         margin-bottom: 40px;
     }
-    .map iframe{
+
+    .map iframe {
         width: 90%;
     }
 }
@@ -613,15 +632,66 @@ footer {
 
 
 @media screen and (max-width: 650px) {
-/* THIRD PART */
-.card.first {
-    margin-right: 0;
-    width:70%;
+
+    /* THIRD PART */
+    .card.first {
+        margin-right: 0;
+        width: 70%;
+    }
+
+    .card.second {
+        display: none;
+    }
+
+    .card.third {
+        display: none;
+    }
 }
-.card.second {
-    display: none;
+
+@keyframes move {
+    0%{
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
-.card.third {
-    display: none;
+
+@keyframes move2 {
+    0%{
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
+
+@keyframes grossisement {
+    0%{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes clignote {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
 }
