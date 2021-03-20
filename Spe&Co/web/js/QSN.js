@@ -1,3 +1,5 @@
+/* Carousel comments */
+
 var timer = 4000;
 
 var i = 0;
