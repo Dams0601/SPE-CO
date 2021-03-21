@@ -8,7 +8,6 @@ setTimeout(function(){
 
 
 
-
 /* HAMBURGER */
 const hamburger = document.querySelector('#hamburger');
 const navContent = document.querySelector('.navbar-content');
