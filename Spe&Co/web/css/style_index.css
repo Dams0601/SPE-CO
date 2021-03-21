@@ -22,6 +22,29 @@ body {
 }
 
 
+/* ENTREE DU SITE */
+.entre {
+    width: 100%;
+    height: 100vh;
+    background: rgb(228, 228, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: forwards entre 2s ease;
+}
+
+.entre img{
+    width: 30%;
+}
+
+.active {
+    opacity: 1;
+}
+
+.disabled {
+    display: none;
+}
+
 /* NAVBAR */
 nav {
     display: flex;
@@ -693,5 +716,17 @@ footer {
     }
     100% {
         opacity: 0.3;
+    }
+}
+
+@keyframes entre {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }
