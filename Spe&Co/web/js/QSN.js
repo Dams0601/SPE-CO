@@ -1,5 +1,12 @@
-/* Carousel comments */
+/* HANBURGER */
+const hamburger = document.querySelector('#hamburger');
+const navContent = document.querySelector('.navbar-content');
 
+hamburger.addEventListener('click', function (e) {
+    navContent.classList.toggle('show');
+})
+
+/* Carousel comments */
 var timer = 4000;
 
 var i = 0;

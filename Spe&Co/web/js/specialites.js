@@ -6,19 +6,6 @@ hamburger.addEventListener('click', function (e) {
     navContent.classList.toggle('show');
 })
 
-/* CAROUSEL - COMMENTARY 
-$(".comments-border > div:gt(0)").hide();
-
-setInterval(function() {
-  $('.comments-border > div:first')
-    .fadeOut(2000)
-    .next()
-    .fadeIn(2000)
-    .end()
-    .appendTo('.comments-border');
-}, 4000);
-*/
-
 /* APPARITION DES TITLES AU DEFILEMENT */
 const ratio = .1
 const options = {
