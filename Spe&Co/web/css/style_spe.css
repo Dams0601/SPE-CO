@@ -306,7 +306,6 @@ a#goTop.show {
     position: absolute;
     top: 15%;
     right: 0px;
-    animation: move_left 12s infinite;
 }
 
 .bande-bottom-left {
@@ -328,7 +327,6 @@ a#goTop.show {
     position: absolute;
     bottom: 10%;
     right: 0;
-    animation: move_left 5s infinite;
 }
 
 .title img {
