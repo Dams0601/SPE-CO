@@ -294,6 +294,7 @@ a#goTop.show {
     position: absolute;
     top: 0;
     left: -30px;
+    animation: move_right 10s infinite;
 }
 
 .bande-top-right {
@@ -304,6 +305,7 @@ a#goTop.show {
     position: absolute;
     top: 15%;
     right: 0px;
+    animation: move_left 12s infinite;
 }
 
 .bande-bottom-left {
@@ -314,6 +316,7 @@ a#goTop.show {
     position: absolute;
     bottom: 25%;
     left: -30px;
+    animation: move_right 7s infinite;
 }
 
 .bande-bottom-right {
@@ -324,6 +327,7 @@ a#goTop.show {
     position: absolute;
     bottom: 10%;
     right: 0;
+    animation: move_left 5s infinite;
 }
 
 .title img {
@@ -755,5 +759,30 @@ footer {
     .box-comments0 {
         width: 90%;
         margin-right: 0;
+    }
+}
+
+
+@keyframes move_left {
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(50px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes move_right {
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(-50px);
+    }
+    100%{
+        transform: translate(0);
     }
 }
