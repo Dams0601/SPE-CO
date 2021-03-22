@@ -167,13 +167,13 @@ nav .logo img {
 }
 
 .banner #book4 {
-    animation: move 10s infinite ease-in-out;
+    animation: move 5s infinite alternate ease-in-out;
 }
+
 
 .banner #book2 {
-    animation: move2 7s infinite ease-in-out;
+    animation: move2 3.5s infinite alternate ease-in-out;
 }
-
 
 .banner #bg {
     animation: clignote 4s infinite ease-in-out;
@@ -322,9 +322,29 @@ nav .logo img {
     background: #c4c4c47a;
 }
 
-.second-part img {
+.second-part svg {
     min-width: 450px;
     width: 40%;
+}
+
+#head-woman {
+    animation: hauchement 2s alternate infinite ease-in-out;
+    transform-origin: center;
+}
+
+#head-man {
+    animation: hauchement 3s alternate infinite ease-in-out;
+    transform-origin: center;
+}
+
+#arm-right-man {
+    animation: movement-right 3s alternate infinite ease-in-out;
+    transform-origin: right;
+}
+
+#arm-left-woman {
+    animation: movement-left 3s alternate infinite ease-in-out;
+    transform-origin: left;
 }
 
 
@@ -676,11 +696,8 @@ footer {
     0%{
         transform: translateY(0);
     }
-    50% {
-        transform: translateY(100px);
-    }
     100% {
-        transform: translateY(0);
+        transform: translateY(100px);
     }
 }
 
@@ -688,11 +705,17 @@ footer {
     0%{
         transform: translateY(0);
     }
-    50% {
+    100% {
         transform: translateY(50px);
     }
-    100% {
-        transform: translateY(0);
+}
+
+@keyframes move3 {
+    0%{
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: scale(-2deg);
     }
 }
 
@@ -729,5 +752,32 @@ footer {
     }
     100%{
         opacity: 0;
+    }
+}
+
+
+@keyframes hauchement {
+    from{
+        transform: rotate(-1deg);
+    }
+    to{
+        transform: rotate(1deg);
+    }
+}
+
+@keyframes movement-right {
+    from{
+        transform: translate(8px);
+    }
+    to{
+        transform: translate(2px);
+    }
+}
+@keyframes movement-left {
+    from{
+        transform: translate(-3px);
+    }
+    to{
+        transform: translate(2px);
     }
 }
