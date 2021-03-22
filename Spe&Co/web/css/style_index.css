@@ -83,6 +83,10 @@ nav .logo img {
     cursor: pointer;
 }
 
+.navbar-content li a.active {
+    font-weight: 600;
+}
+
 .navbar-content li a:hover {
     color: rgb(121, 121, 121);
     background-size: 100% 100%;
