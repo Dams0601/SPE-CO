@@ -8,97 +8,25 @@
 body {
     font-family: Roboto, sans-serif;
     background: rgb(255, 255, 255);
-}
-
-/* NAVBAR */
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgb(255, 255, 255);
-    min-height: 100px;
-    flex-wrap: wrap;
-}
-
-nav .logo img {
-    width: 60px;
-}
-
-.navbar-content {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar-content li {
-    list-style: none;
-}
-
-.navbar-content li a {
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    font-weight: 500;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .5s;
-    cursor: pointer;
-}
-
-.navbar-content li a:hover {
-    color: rgb(121, 121, 121);
-    background-size: 100% 100%;
-}
-
-.hamburger {
-    background-color: transparent;
-    border: 0;
-    color: black;
-    cursor: pointer;
-    font-size: 20px;
-    display: none;
-}
-
-.hamburger:focus {
-    outline: none;
-}
-
-.inscription {
-    padding: 10px 20px;
-    border: 2px solid transparent;
-    background: #508DE8;
-    border-radius: 10px;
-    transition: all .5s;
-    color: white;
-    font-size: large;
-    cursor: pointer;
-
-}
-
-.inscription:hover {
-    border: 2px solid #508DE8;
-    background: transparent;
-    color: #508DE8;
+    height: 100vh;
 }
 
 
 /* Content */
 section{
-    padding-top: 14%;
-    padding-bottom: 14%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(20deg,#191cc9, #138338);
 }
 
 #form_div{
-    margin-left: 30%;
-    margin-right: 30%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 2%;
-    padding-right: 2%;
-    border: 2mm ridge;
+    position: relative;
+    max-width: 600px;
+    width: 60%;
+    padding: 3%;
     background-color: rgba(235, 235, 235, 0.75);
 }
 
@@ -109,32 +37,57 @@ form{
     font-weight: bold;
 }
 
+.fas {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: black;
+    transition: color .5s;
+}
+
+.fas:hover {
+    color: red;
+    animation: alternate rotate .5s;
+}
 
 
 /* FORMULAIRE */
+
+label {
+    font-size: 18px;
+}
+
 input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
+    font-size: 16px;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
+    transition: all .3s;
 }
 
-input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
+input[type=text]:focus, input[type=password]:focus, input[type=text]:hover, input[type=password]:hover {
+    background-color: rgb(208, 208, 208);
     outline: none;
 }
 
 #submit{
     background-color: #4CAF50;
     color: white;
+    font-size: 18px;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+    transition: all .5s;
+}
+
+#submit:hover {
+    background-color: #3b853d;
 }
 
 .new_page{
@@ -143,10 +96,24 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 
-/* FOOTER */
-footer {
-    background: #000;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+/* ADAPTATION AUX DIFFERENTES TAILLES D'ECRAN*/
+@media screen and (max-width: 700px) {
+    #form_div {
+        width: 70%;
+        padding: 6%;
+    }
+    .fas {
+        position: absolute;
+        top: 2%;
+        right: 15px;
+    }
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
