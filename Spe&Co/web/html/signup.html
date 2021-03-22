@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../content/img/logo.png">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="../css/style_userlog.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <img src="../content/img/logo.png" alt="logo">
+        </div>
+        <button class="hamburger" id='hamburger'>
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="navbar-content">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="specialites.html">Specialités</a></li>
+            <li><a href="">Qui sommes-nous</a></li>
+            <li><a href="https://www.ndp-enghien.org/">Contact</a></li>
+            <button class="inscription" onclick="goToSignIn()">CONNEXION</button>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <section>
+        <div id="form_div">
+            <form method="POST" action="signin.html" id="form">
+                <label for="user">Indentifiant : </label><input id="user" placeholder="Entrer votre nom" type="text">
+                <label for="mail">Addresse email : </label><input id="mail" placeholder="Entrer votre addresse email" type="text">
+                <label for="password">Mot de passe : </label><input id="password" placeholder="Entre votre mot de passe" type="text">
+                <label for="confirm_password">Confirmer votre mot de passe : </label><input id="confirm_password" placeholder="Confirmer votre mot de passe" type="text">
+            </form>
+            <button id="submit" onclick="submit_form()">S'inscrire</button> 
+        </div>
+    </section>
+
+    <!-- Footer/Copyright -->
+    <footer>
+        <p>© 2021 SPE&CO. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/userlog.js"></script>
+</body>
+</html>
