@@ -1,14 +1,15 @@
-document.querySelector('.inscription').addEventListener('click',function(e){
+function inscription(){
 	console.log('BONJOUR')
 	location.href = "../html/connexion.html";
-})
+}
 
 /* Signup form string lenght check */
-function submit_form(){
-	if(document.getElementById("password").value.length > 3 && document.getElementById("mail").value.length > 3){
+document.querySelector('#submit').addEventListener('click', function(e){
+    if(document.getElementById("password").value.length > 3 && document.getElementById("mail").value.length > 3 && document.querySelector('#confirm_password').value==document.querySelector('#password').value){
 		document.getElementById("form").submit();
+        inscription();
 	}
 	else{
-		alert("Vos identifiants ne peuvent pas être aussi court !");
+		alert("Les coordonées entrées sont erronées.");
 	}
-}
+})
