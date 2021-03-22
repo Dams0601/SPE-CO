@@ -1,0 +1,29 @@
+body{
+	background-color: #070714;
+	text-align: center;
+	font-weight: bold;
+	color: #F5F5F5;
+}
+
+div{
+	margin-left: 30%;
+	margin-right: 30%;
+	background-color: #070714;
+	border: solid 4px;
+	border-radius: 3px;
+	background-image: linear-gradient(to left, blue, red);
+	line-height: 2.8;
+	padding-bottom: 2%;
+}
+
+#message{
+	vertical-align: top;
+}
+
+#done{
+	color: #F5F5F5;
+	background-color: #070714;
+	border: solid 1px;
+	border-color: white;
+	padding: 1%;
+}
