@@ -1,6 +1,6 @@
 /* Signin button redirection */
 function goToSignIn(){
-    window.location.href = "../html/signin.html";
+    window.location = "../html/signin.html";
 }
 
 /* Signup form string lenght check*/
