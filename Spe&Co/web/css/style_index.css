@@ -342,13 +342,13 @@ nav .logo img {
 }
 
 #arm-right-man {
-    animation: movement-right 3s alternate infinite ease-in-out;
-    transform-origin: right;
+    animation: movement-right 2.5s alternate infinite ease-in-out;
+    transform-origin: center;
 }
 
 #arm-left-woman {
-    animation: movement-left 3s alternate infinite ease-in-out;
-    transform-origin: left;
+    animation: movement-left 1s alternate infinite ease-in-out;
+    transform-origin: center;
 }
 
 
@@ -775,6 +775,7 @@ footer {
     }
     to{
         transform: translate(2px);
+        transform: rotate(1deg);
     }
 }
 @keyframes movement-left {
@@ -783,5 +784,6 @@ footer {
     }
     to{
         transform: translate(2px);
+        transform: rotate(1deg);
     }
 }
