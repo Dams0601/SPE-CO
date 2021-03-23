@@ -25,9 +25,9 @@
             <i class="fas fa-bars"></i>
         </button>
         <div class="navbar-content">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="specialites.html">Specialités</a></li>
-            <li><a href="quiSommesNous.html" class="active">Qui sommes-nous ?</a></li>
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="specialites.php">Specialités</a></li>
+            <li><a href="quiSommesNous.php" class="active">Qui sommes-nous ?</a></li>
             <li><a href="https://www.ndp-enghien.org/">Contact</a></li>
             <a href="../html/connexion.html"><button class="inscription">CONNEXION</button></a>
         </div>

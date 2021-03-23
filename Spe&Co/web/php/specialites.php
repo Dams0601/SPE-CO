@@ -25,21 +25,21 @@
             <i class="fas fa-bars"></i>
         </button>
         <div class="navbar-content">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="specialites.html" class="active">Specialités</a></li>
-            <li><a href="quiSommesNous.html">Qui sommes-nous ?</a></li>
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="specialites.php" class="active">Specialités</a></li>
+            <li><a href="quiSommesNous.php">Qui sommes-nous ?</a></li>
             <li><a href="https://www.ndp-enghien.org/">Contact</a></li>
 
                 <?php
                 if(isset($_COOKIE['User_user'])){
                     ?>
-                    <img src="../content/img/user.svg" alt="">
+                        <img src="../content/img/user.svg" alt="">
                     <?php
                     print($_COOKIE['User_user']);
                 }
                  else {
                     ?>
-                    <a href="../html/connexion.html"><button class="inscription">CONNEXION</button></a>
+                        <a href="../html/connexion.html"><button class="inscription">CONNEXION</button></a>
                     <?php
                 }
                 ?>
