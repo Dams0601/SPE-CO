@@ -63,11 +63,22 @@ nav .logo img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-right: 15px;
+    position: relative;
 }
 
 .navbar-content img {
     width: 50px;
+    margin-right: 15px;
+}
+
+.navbar-content .profile .fermer{
+    position: absolute;
+    top: 17px;
+    right: -25px;
+}
+
+.navbar-content .profile i {
+    color: red;
 }
 
 .hamburger {
