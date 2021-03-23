@@ -58,6 +58,18 @@ nav .logo img {
     background-size: 100% 100%;
 }
 
+.navbar-content .profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.navbar-content img {
+    width: 50px;
+}
+
 .hamburger {
     background-color: transparent;
     border: 0;

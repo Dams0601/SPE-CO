@@ -1,6 +1,6 @@
 /* Signup form string lenght check */
 document.querySelector('#submit').addEventListener('click', function(e){
-    if(document.getElementById("password").value.length > 3 && document.getElementById("mail").value.length > 3){
+    if(document.getElementById("password").value.length > 3 && document.getElementById("user").value.length > 3){
 		document.getElementById("form").submit();
 	}
 	else{

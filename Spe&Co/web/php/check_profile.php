@@ -4,14 +4,16 @@
     $user_enter=$_POST['user'];
     $password_enter=$_POST['password'];
 
-    if($_COOKIE["User_user"] == $user_enter && $_COOKIE["User_password"] == $password_enter){
-        echo "yes boi !";
+    if(isset($_COOKIE["User_user"]) && isset($_COOKIE["User_password"])){
+        if($_COOKIE["User_user"] == $user_enter && $_COOKIE["User_password"] == $password_enter){
+            # Redirect to the index page
+            header("Location: index.php");
+            exit;
+        } 
     }
     else{
-        echo "lmao lol no";
+        header("Location: ../html/inscription.html");
+            exit;
     }
 
-    # Redirect to the index page
-    header("Location: index.php");
-    exit;
 ?>
