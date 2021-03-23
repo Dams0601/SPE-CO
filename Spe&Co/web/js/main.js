@@ -1,5 +1,0 @@
-/**
-
-Fichier script principal
-
-**/
