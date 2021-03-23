@@ -373,7 +373,7 @@
             </div>
 
             <div class="box-comments0">
-                <p class="quote">“ Le chapitre qui j'ai le plus aimé est les suites. ”</p>
+                <p class="quote">“ Le chapitre que j'ai le plus aimé est les suites. ”</p>
                 <div class="profil">
                     <img src="../content/img/user.svg" alt="">
                     <div class="info-profil">
