@@ -373,7 +373,7 @@
             </div>
 
             <div class="box-comments0">
-                <p class="quote">“ Far far away, behind the word mountains, far from the countries. ”</p>
+                <p class="quote">“ Le chapitre qui j'ai le plus aimé est les suites. ”</p>
                 <div class="profil">
                     <img src="../content/img/user.svg" alt="">
                     <div class="info-profil">
