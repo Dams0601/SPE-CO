@@ -36,6 +36,10 @@
                         <img src="../content/img/user.svg" alt="">
                     <?php
                     print($_COOKIE['User_user']);
+                    ?>
+                        <a href="delete.php" class="fermer"><i class="fas fa-times fa-lg"></i></a>
+                </div>
+                    <?php
                 }
                  else {
                     ?>

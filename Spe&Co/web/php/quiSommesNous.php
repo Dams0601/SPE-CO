@@ -29,7 +29,25 @@
             <li><a href="specialites.php">Specialités</a></li>
             <li><a href="quiSommesNous.php" class="active">Qui sommes-nous ?</a></li>
             <li><a href="https://www.ndp-enghien.org/">Contact</a></li>
-            <a href="../html/connexion.html"><button class="inscription">CONNEXION</button></a>
+            <div class='profile'>
+            <?php
+                if(isset($_COOKIE['User_user'])){
+                    ?>
+                        <img src="../content/img/user.svg" alt="">
+                    <?php
+                    print($_COOKIE['User_user']);
+                    ?>
+                        <a href="delete.php" class="fermer"><i class="fas fa-times fa-lg"></i></a>
+                </div>
+                    <?php
+                }
+                 else {
+                    ?>
+                        <a href="../html/connexion.html"><button class="inscription">CONNEXION</button></a>
+                    <?php
+                }
+                ?>
+            </div>
         </div>
     </nav>
 

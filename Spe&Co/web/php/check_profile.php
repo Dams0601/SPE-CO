@@ -9,11 +9,15 @@
             # Redirect to the index page
             header("Location: index.php");
             exit;
-        } 
+        }
+        else {
+            header("Location: ../html/connexion.html");
+            exit;
+        }
     }
     else{
         header("Location: ../html/inscription.html");
-            exit;
+        exit;
     }
 
 ?>
