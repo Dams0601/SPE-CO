@@ -81,6 +81,10 @@ nav .logo img {
     color: red;
 }
 
+.navbar-content .profile i:hover{
+    animation: rotate alternate .7s;
+}
+
 .hamburger {
     background-color: transparent;
     border: 0;
@@ -810,5 +814,15 @@ footer {
     }
     100%{
         transform: translate(0);
+    }
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

@@ -92,6 +92,10 @@ nav .logo img {
     color: red;
 }
 
+.navbar-content .profile i:hover{
+    animation: rotate alternate .7s;
+}
+
 .hamburger {
     background-color: transparent;
     border: 0;
