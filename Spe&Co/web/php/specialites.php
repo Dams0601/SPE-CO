@@ -29,10 +29,11 @@
             <li><a href="specialites.php" class="active">Specialités</a></li>
             <li><a href="quiSommesNous.php">Qui sommes-nous ?</a></li>
             <li><a href="https://www.ndp-enghien.org/">Contact</a></li>
-            <div class='profile'>
+            
             <?php
                 if(isset($_COOKIE['User_user'])){
                     ?>
+                    <div class='profile'>
                         <img src="../content/img/user.svg" alt="">
                     <?php
                     print($_COOKIE['User_user']);
